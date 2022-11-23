@@ -30,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         auth.inMemoryAuthentication()
                 .withUser(SECURE_KEY_USERNAME)
-                .password("{noop}password")
+                .password("{noop}"+SECURE_KEY_PASSWORD)
                 .roles("USER");
     }
 
@@ -42,5 +42,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 }
 
 // INFO : There is no PasswordEncoder mapped for the id "null" hatası alıyorduk
-// .password("{noop}password")  --> {noop} eklemesi ile çözdük.
+// .password("{noop}[password]")  --> {noop} eklemesi ile çözdük.
 

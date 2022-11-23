@@ -1,5 +1,5 @@
 {
-  "name":"sha-microservice-1-product",
+  "name":"spring-bomic",
   "buildpacks":[
     {
       "url": "heroku/gradle"
