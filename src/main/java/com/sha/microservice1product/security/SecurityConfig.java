@@ -41,6 +41,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 }
 
-// INFO : There is no PasswordEncoder mapped for the id "null" hatası alıyorduk
-// .password("{noop}[password]")  --> {noop} eklemesi ile çözdük.
 
